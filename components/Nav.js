@@ -1,0 +1,115 @@
+import navStyles from '../styles/Nav.module.css'
+
+const Nav = () => {
+    return (
+        <header>
+
+            <a href="<?=$site['site_url']?>" className="top-banner-jsc">
+
+                    <div>
+                        <div className="banner-top container">
+                            
+                            <div  className="banner-top-logo">
+                                <img src="https://jsc.gov.mv/images/Logo-new-3.svg"/>
+                            </div>
+                            <div className="banner-top-text">
+                                <h1 className="banner-top-jsc">ޖުޑީޝަލް ސަރވިސް ކޮމިޝަން</h1>
+                                <h1 className="banner-top-dhv">ދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ</h1>
+                            </div>
+                        </div>
+                    </div>
+            </a>
+                    
+
+
+        <nav id="navbar_top" className="navbar navbar-expand-lg navbar-dark">
+          <div className="container">
+            
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="<?=$site['site_url']?>" className="navbar-brand" id="navbar-brand">
+
+             <div className="logo-container-out">
+                <div id="animate" className=" animate__animated animate__slideInDown">
+
+                
+                  <div className="logo-container text-center">
+                    
+                    <img src="https://jsc.gov.mv/images/Logo-new-3.svg" height="100%" />
+                </div>
+              </div>
+             </div>
+              
+
+
+               
+            </a>
+            
+           
+            <a className="btn d-lg-none d-xl-none mobile-search-btn" href="<?=$site['site_url']?>search/">
+              <i className="fa fa-search text-white" aria-hidden="true"></i>
+            </a>
+
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav me-auto mb-2 mb-md-0">
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle px-3 margin-right-cl" href="#" id="navbarDropdown margin-right-cl" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ތަޢާރަފް <i className="fa fa-chevron-down fa-dropdown-arrow text-white" aria-hidden="true"></i>
+                    </a>
+                    <ul className="dropdown-menu border-0 shadow fade-down margin-right-cl" aria-labelledby="navbarDropdown">
+                      <li><a className="dropdown-item" href="<?=$site['site_url']?>commission/">ކޮމިޝަނުގެ ތަޢާރަފް</a></li>
+                      <li><a className="dropdown-item" href="<?=$site['site_url']?>members/">މެންބަރުން</a></li>
+                      <li><a className="dropdown-item" href="<?=$site['site_url']?>works/">މަސައްކަތްތައް</a></li>
+                      <li><a className="dropdown-item" href="<?=$site['site_url']?>organization-structure/">އިދާރީ އޮނިގަނޑު</a></li>
+                    </ul>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link px-3 ms-2" href="<?=$site['site_url']?>judges/" tabIndex="-1" aria-disabled="true">ފަނޑިޔާރުން</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link px-3 ms-2" href="<?=$site['site_url']?>media/circular/" tabIndex="-1" aria-disabled="true">ސަރކިއުލަރ</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link px-3 ms-2" href="<?=$site['site_url']?>media/rules/" tabIndex="-1" aria-disabled="true">ގަވާއިދު</a>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a className="nav-link dropdown-toggle px-3 ms-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ޝަކުވާ <i className="fa fa-chevron-down fa-dropdown-arrow text-white" aria-hidden="true"></i>
+                      </a>
+                      <ul className="dropdown-menu border-0 shadow fade-down ms-3" aria-labelledby="navbarDropdown">
+                        <li><a className="dropdown-item" href="<?=$site['site_url']?>complaint/">ޝަކުވާ ހުށައެޅުން</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a className="nav-link dropdown-toggle px-3 ms-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        މީޑިއާ <i className="fa fa-chevron-down fa-dropdown-arrow text-white" aria-hidden="true"></i>
+                      </a>
+                      <ul className="dropdown-menu border-0 shadow fade-down ms-3" aria-labelledby="navbarDropdown">
+                        <li><a className="dropdown-item" href="<?=$site['site_url']?>media/news/">ޚަބަރު</a></li>
+                        <li><a className="dropdown-item" href="<?=$site['site_url']?>media/announcement/">އިޢުލާން</a></li>
+                        <li><a className="dropdown-item" href="<?=$site['site_url']?>gallery/">ފޮޓޯ ގެލަރީ</a></li>
+                      </ul>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link px-3 ms-2" href="<?=$site['site_url']?>downloads/" tabIndex="-1" aria-disabled="true">ޑައުންލޯޑްސް</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link px-3 ms-2" href="<?=$site['site_url']?>contact/" tabIndex="-1" aria-disabled="true">ގުޅުއްވާ</a>
+                    </li>
+                 </ul>
+                 <ul className="navbar-nav ms-auto">
+                    <li className="nav-item d-none d-lg-block">
+                      <a className="btn ms-4 srch-button" href="<?=$site['site_url']?>search/"><i className="fa fa-search text-white" aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+    )
+}
+
+export default Nav
