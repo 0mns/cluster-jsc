@@ -12,7 +12,7 @@ const Home =() => {
   });
   
   const fetchapi = async () => {
-    let response = await fetch('http://localhost:3000/api/atolls')
+    let response = await fetch('https://cluster-jsc.vercel.app/api/atolls')
     response = await response.json()
     console.log(response)
     setState({ ...state, allAtolls: response });
