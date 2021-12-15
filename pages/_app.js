@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 
-import '../styles/bootstrap.rtl.css'
 import '../styles/style.css'
+import '../styles/bootstrap.rtl.css'
 
 
 
