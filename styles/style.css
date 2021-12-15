@@ -10,8 +10,8 @@
 }
 @font-face {
     font-family: 'mv_faseyharegular';
-    src: url('/fonts/mv_faseyha.woff2') format('woff2'),
-         url('/fonts/mv_faseyha.woff') format('woff');
+    src: url('https://jsc.gov.mv/fonts/mvwaheed.woff2') format('woff2'),
+         url('https://jsc.gov.mv/fonts/mvwaheed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
