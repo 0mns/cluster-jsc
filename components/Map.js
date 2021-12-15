@@ -6,7 +6,6 @@ const Map = (props) => {
   useEffect(() => {
     const element = document.getElementsByClassName("atoll-svg");
     for (let i = 0; i < element.length; i++) {
-      console.log(element[i]);
       element[i].style.cursor = "pointer";
       element[i].addEventListener("mouseenter", (e) => {
         element[i].classList.add("hoverr");
