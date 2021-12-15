@@ -3,15 +3,15 @@
 /* global */
 @font-face {
     font-family: 'mv_waheedregular';
-    src: url('../public/fonts/mvwaheed.woff2') format('woff2'),
-         url('../public/fonts/mvwaheed.woff') format('woff');
+    src: url('/fonts/mvwaheed.woff2') format('woff2'),
+         url('/fonts/mvwaheed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'mv_faseyharegular';
-    src: url('../public/fonts/mv_faseyha.woff2') format('woff2'),
-         url('../public/fonts/mv_faseyha.woff') format('woff');
+    src: url('/fonts/mv_faseyha.woff2') format('woff2'),
+         url('/fonts/mv_faseyha.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'poppinsregular';
     font-weight: 400;
-    src: url('../public/fonts/poppins-regular.woff') format('woff');
+    src: url('/fonts/poppins-regular.woff') format('woff');
     unicode-range: U+30-39;
 }
 
