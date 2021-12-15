@@ -12,7 +12,8 @@ const Home =() => {
   });
   
   const fetchapi = async () => {
-    let response = await fetch('https://cluster-jsc.vercel.app/api/atolls')
+    let response = await fetch(`${process.env.DOMAINSS}/api/atolls`)
+    console.log(process.env.DOMAINSS)
     response = await response.json()
     console.log(response)
     setState({ ...state, allAtolls: response });
