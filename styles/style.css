@@ -105,7 +105,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #fff !important;
 }
 
 .dropdown-item {
