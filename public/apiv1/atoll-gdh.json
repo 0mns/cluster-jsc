@@ -1,0 +1,45 @@
+{ 
+    "name": "ގދ. ޖުޑީޝަލް ދާއިރާ",
+    "clusterMap": "GDH",
+    "totalClusters": 5,
+    "totalCases": 1000,
+    "finishedCases": 30,
+    "clusters": {
+        "Q1": {
+           "islands": [
+               "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+           ],
+           "totalCases": 333,
+           "magistrates": 2
+        },
+        "Q2": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "Q3": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "Q4": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "Q5": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         }
+       
+    }
+ }

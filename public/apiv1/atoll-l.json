@@ -1,0 +1,45 @@
+{ 
+    "name": "ލ. ޖުޑީޝަލް ދާއިރާ",
+    "clusterMap": "L",
+    "totalClusters": 5,
+    "totalCases": 1000,
+    "finishedCases": 30,
+    "clusters": {
+        "O1": {
+           "islands": [
+               "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+           ],
+           "totalCases": 333,
+           "magistrates": 2
+        },
+        "O2": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "O3": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "O4": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "O5": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         }
+       
+    }
+ }

@@ -1,0 +1,31 @@
+{ 
+    "name": "އދ. ޖުޑީޝަލް ދާއިރާ",
+    "clusterMap": "ADH",
+    "totalClusters": 3,
+    "totalCases": 1000,
+    "finishedCases": 30,
+    "clusters": {
+        "I1": {
+           "islands": [
+               "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+           ],
+           "totalCases": 333,
+           "magistrates": 2
+        },
+        "I2": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         },
+         "I3": {
+            "islands": [
+                "ހއ. ތުރާކުރުނު", "ހއ. އުލިގަން"
+            ],
+            "totalCases": 323,
+             "magistrates": 3
+         }
+       
+    }
+ }
