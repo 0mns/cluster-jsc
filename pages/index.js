@@ -3,16 +3,14 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Map from "../components/Map";
-import ClusterDetail from "../components/Clusterdetail";
 import { useWindowSize } from "../utils/size";
-import { stickyNav } from "../utils/sticky-nav";
 
-const Home = () => {
+
+const Home = (props) => {
   const size = useWindowSize();
   const router = useRouter();
   const [state, setState] = useState({
     allAtolls: [],
-
     width: 0,
   });
 
@@ -26,35 +24,19 @@ const Home = () => {
        navigator.share(shareData)
   }
 
-
-  
-
-  const fetchapi = async () => {
-    
-  };
-
-  useEffect(() => {
-    fetchapi();
-    stickyNav();
-  }, [router]);
-
   const updateAtoll = (atoll) => {
-    console.log(state.allAtolls[atoll]);
-    console.log(atoll);
     const atolo = state.allAtolls[atoll];
     setState({ ...state, selectedAtoll: atolo });
-
     router.push(`/${atoll}`);
   };
 
   return (
     <div>
-      <Head>
-        <title>Cluster Map</title>
-        <link rel="me"
-  href="https://twitter.com/maldivesjsc"
-></link>
-
+       <Head>
+        <title>{props.pageHeader.title}</title>
+        {props.pageHeader.metas.map((attributes, index) => (
+          <meta {...attributes} key={index} />
+        ))}
       </Head>
 
       <div className="container pb-3 mt-3">
@@ -65,10 +47,18 @@ const Home = () => {
             <div className="row mb-5">
               <div className="col-lg-6">
                 <h5 className="post-cat mt-2">ކްލަސްޓާރ ޗާޓު /</h5>
-                <h1 className={styles.heading}>ދކމކފދސަމ</h1>
+                <h1 className={styles.heading}>ޖުޑީޝަލް ދާއިރާތަކުގެ ޗާޓު</h1>
 
                 <div className="row mb-3 ">
                   <div className="col ">
+                    <div className="col">
+                      <h5>44</h5>
+                    </div>
+                    <div className="col">
+                      <h6>އަތޮޅު</h6>
+                    </div>
+                  </div>
+                  <div className="col">
                     <div className="col">
                       <h5>44</h5>
                     </div>
@@ -78,18 +68,10 @@ const Home = () => {
                   </div>
                   <div className="col">
                     <div className="col">
-                      <h5>44</h5>
-                    </div>
-                    <div className="col">
-                      <h6>ޖުމްލަ މައްސަލަ</h6>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="col">
                       <h5>55</h5>
                     </div>
                     <div className="col">
-                      <h6>ފަނޑިޔާރުންގެ އަދަދު</h6>
+                      <h6>ފަނޑިޔާރުން</h6>
                     </div>
                   </div>
                 </div>
@@ -99,13 +81,13 @@ const Home = () => {
           
 
   
-            <div className={styles.sharee+ ' mt-2 py-2'}>
-              <div  className="">SHARE    | 
+            <div className={styles.sharee+ ' mt-2 py-2 row'}>
+              <div  className="col">SHARE    | 
               <a rel="noreferrer"  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jsc.gov.mv/cluster-map"><i className="fa fa-facebook"></i></a>
               <a rel="noreferrer"  target="_blank"  href={`https://twitter.com/intent/tweet?text=Maldives Judicial Clusters Chart via @maldivesjsc &url=https://jsc.gov.mv/cluster-map`} ><i className="fa fa-twitter"></i></a> 
               <a rel="noreferrer"  onClick={share} ><i className="fa fa-share"></i></a>
               </div>
-              
+              <div className="col updatedat">Updated at: 13 Jan 2022</div>
             </div>
             </div>
           </div>
@@ -115,5 +97,45 @@ const Home = () => {
     </div>
   );
 };
+
+
+
+export async function getStaticProps() {
+  return {
+    props: {
+     
+      pageHeader: {
+        title: "ޖުޑީޝަލް ދާއިރާތަކުގެ ޗާޓު",
+        metas: [
+          {
+            property: "og:title",
+            content: `ޖުޑީޝަލް ދާއިރާތަކުގެ ޗާޓު`,
+          },
+          {
+            property: "og:image",
+            content: `https://jsc.gov.mv/cluster-map/img/main.png`,
+          },
+          {
+            property: "og:type",
+            content: `article`,
+          },
+
+          {
+            name: "twitter:title",
+            content: `ޖުޑީޝަލް ދާއިރާތަކުގެ ޗާޓު`,
+          },
+          {
+            name: "twitter:image:src",
+            content: `https://jsc.gov.mv/cluster-map/img/main.png`,
+          },
+          {
+            name: "twitter:card",
+            content: `summary_large_image`,
+          },
+        ],
+      },
+    },
+  };
+}
 
 export default Home;

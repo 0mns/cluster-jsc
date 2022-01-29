@@ -28,6 +28,11 @@
 body {
     font-family: "poppinsregular", "mv_waheedregular" !important;
 }
+
+.updatedat{
+    text-align: left;
+    opacity: 0.6;
+}
 .container-s{
     margin: auto;
     max-width: 1224px;

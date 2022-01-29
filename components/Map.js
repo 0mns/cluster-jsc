@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-import mapStyles from "../styles/Nav.module.css";
 
 const Map = (props) => {
-  console.log(props);
+ 
   useEffect(() => {
     const element = document.getElementsByClassName("atoll-svg");
     for (let i = 0; i < element.length; i++) {
@@ -15,8 +14,6 @@ const Map = (props) => {
       });
       element[i].onclick = function () {
         props.updateAtoll(element[i].id);
-        
-        
       };
     }
   });

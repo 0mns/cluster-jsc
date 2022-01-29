@@ -1,12 +1,11 @@
-import navStyles from '../styles/Nav.module.css'
 import { useEffect } from "react";
 import {stickyNav} from "/utils/sticky-nav"
 
 const Nav = () => {
   useEffect(() => {
-    
     stickyNav()
   }, []);
+  
     return (
       <div className="navigation">
         <header>
