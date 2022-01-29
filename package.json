@@ -1,5 +1,5 @@
 {
-  "name": "JSC Cluster Map",
+  "name": "jsc-cluster-map",
   "private": true,
   "scripts": {
     "dev": "next dev",
